@@ -1,0 +1,4 @@
+# Default ignored files
+/springboot-01-helloworld/.mvn/
+/springboot-02-config/.mvn/
+/springboot-03-web/.mvn/
