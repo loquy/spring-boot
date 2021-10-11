@@ -22,7 +22,7 @@ public class DepartmentDao {
         departments.put(105, new Department(105, "后勤部"));
     }
 
-    public Collection<Department> getDepartment() {
+    public Collection<Department> getDepartments() {
         return departments.values();
     }
 
