@@ -2,11 +2,13 @@ package com.example.dao;
 
 import com.example.pojo.Department;
 import com.example.pojo.Employee;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 public class EmployeeDao {
     private static Map<Integer, Employee> employees = null;
 

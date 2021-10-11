@@ -1,11 +1,13 @@
 package com.example.dao;
 
 import com.example.pojo.Department;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 public class DepartmentDao {
 
     private static Map<Integer, Department> departments = null;
