@@ -22,8 +22,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/level2/**").hasRole("vip3")
                 .antMatchers("/level3/**").hasRole("vip3");
 
-        // 没有权限会到登录页
-        http.formLogin();
+        // 没有权限会到登录页，loginPage定制登录页
+        http.formLogin()
+                .loginPage("/toLogin")
+                .usernameParameter("user")
+                .passwordParameter("pwd")
+                .loginProcessingUrl("/login");
+
+        // 注销
+        http.logout();
+
+        // 防止网站攻击
+        http.csrf().disable();
+
+        http.logout().logoutSuccessUrl("/");
+
+        // 记住我 cookie 默认两周
+        http.rememberMe().rememberMeParameter("remember");
     }
 
     // 认证
@@ -34,6 +49,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .withUser("root").password(new BCryptPasswordEncoder().encode("123456")).roles("vip1", "vip2", "vip3")
                 .and()
-                .withUser("guest").password(new BCryptPasswordEncoder().encode("123456")).roles("vip1", "vip2", "vip3");
+                .withUser("guest").password(new BCryptPasswordEncoder().encode("123456")).roles("vip1");
     }
 }
