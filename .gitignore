@@ -4,4 +4,5 @@
 /springboot-03-web/.mvn/
 /springboot-04-data/.mvn/
 /springboot-05-mybatis/.mvn/
-springboot-06-security/.mvn/
+/springboot-06-security/.mvn/
+/springboot-07-shiro/shiro-springboot/.mvn/
