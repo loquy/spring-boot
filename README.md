@@ -1,4 +1,4 @@
-# Java SSM framework learning
+# Java SpringBoot framework learning
 Hello, this is my learning Java spring boot framework demo
 
 # Video tutorial
