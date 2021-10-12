@@ -3,3 +3,5 @@
 /springboot-02-config/.mvn/
 /springboot-03-web/.mvn/
 /springboot-04-data/.mvn/
+/springboot-05-mybatis/.mvn/
+springboot-06-security/.mvn/
