@@ -6,3 +6,6 @@
 /springboot-05-mybatis/.mvn/
 /springboot-06-security/.mvn/
 /springboot-07-shiro/shiro-springboot/.mvn/
+/springboot-08-swagger/.mvn/
+/springboot-09-test/.mvn/
+/springboot-10-redis/.mvn/
